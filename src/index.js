@@ -9,17 +9,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const time = new Date().getHours();
-var customStyle = {};
+var customStyle = { color: "" };
 var timeOfDay;
 
 if (time < 12) {
-  customStyle = { color: "red" };
+  customStyle.color = "red";
   timeOfDay = "Good morning";
 } else if (time < 18) {
-  customStyle = { color: "green" };
+  customStyle.color = "green";
   timeOfDay = "Good Afternoon";
 } else {
-  customStyle = { color: "blue" };
+  customStyle.color = "blue";
   timeOfDay = "Good Evening";
 }
 
