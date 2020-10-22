@@ -10,13 +10,12 @@ import ReactDOM from "react-dom";
 
 const time = new Date().getHours();
 var customStyle = {};
-var timeOfDay = "";
-console.log(time);
+var timeOfDay;
 
-if (time >= 0 && time < 12) {
+if (time < 12) {
   customStyle = { color: "red" };
   timeOfDay = "Good morning";
-} else if (time > 12 && time < 18) {
+} else if (time < 18) {
   customStyle = { color: "green" };
   timeOfDay = "Good Afternoon";
 } else {
